@@ -144,7 +144,7 @@ STORAGES = {
 }
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(DJANGO_DIRS, 'media')
 
 # Ensure Django has permission to write to this directory
 os.makedirs(MEDIA_ROOT, exist_ok=True)
